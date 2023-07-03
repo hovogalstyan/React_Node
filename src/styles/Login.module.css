@@ -1,0 +1,310 @@
+.Login {
+    width: 100%;
+    height: 100vh;
+    background: #E1EFF6;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.bac_imag {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: -25%;
+    z-index: 1;
+}
+
+.container {
+    width: 70%;
+    height: 600px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 99;
+    box-shadow: 0 0 15px -1px #000000;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.images_login {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.Login_Form {
+    width: 35%;
+    padding-top: 5rem;
+    padding-left: 6rem;
+}
+
+.Login_Form h1, h2 {
+    font-family: Amatic SC, sans-serif;
+    letter-spacing: 7px;
+    color: #E1EFF6;
+    line-height: 42px;
+}
+
+.Login_Form h2 {
+    font-weight: 900;
+    background-image: linear-gradient(to top, red, rgb(255, 215, 0));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.form {
+    padding: 0.5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.input_styles {
+    width: 100%;
+
+}
+
+.input_styles small {
+    color: red;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.input_styles:nth-child(2) {
+    margin-top: 2.3rem;
+}
+
+.input_styles input {
+    width: 100%;
+    height: 35px;
+    background: #E1EFF6;
+    color: black;
+    padding-left: 0.3rem;
+    font-size: 14px;
+    outline: none;
+}
+
+.password_block_text {
+    width: 100%;
+    display: flex;
+    padding: 6px 0;
+    justify-content: space-between;
+}
+
+.password_block_text small {
+    font-size: 13px;
+    font-weight: 400;
+    color: #465685;
+    cursor: pointer;
+}
+
+.Remember_block {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Remember_block div {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.Remember_block div span {
+    position: absolute;
+    font-size: 17px;
+    color: white;
+    left: -120%;
+    top: -100%;
+    transition: all 0.3s;
+    transform: rotate(306deg);
+}
+
+.active_save_class div {
+    background: blue;
+}
+
+.active_save_class div span {
+    left: -4px;
+    top: -5px;
+    transform: rotate(0deg);
+}
+
+.Remember_block span {
+    color: #465685;
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 3px;
+    transition: all 0.5s;
+}
+
+.active_save_class span {
+    color: white;
+}
+
+.btn_login {
+    width: 100%;
+    color: #E1EFF6;
+    padding: 10px 0;
+    margin-top: 35px;
+    border: none;
+    background: #A93159;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.icons_block {
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.title_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_block span {
+    width: 30%;
+    height: 1px;
+    background: white;
+}
+
+.title_block small {
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.icons_list {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons_list li {
+    list-style: none;
+    padding: 3px 22px;
+    border: 1px solid #ffffff;
+    background: linear-gradient(transparent, black);
+    border-radius: 8px;
+}
+
+.icons_list li a {
+    font-size: 27px;
+    color: #E1EFF6;
+    text-decoration: none;
+}
+
+.Login_Form p {
+    color: white;
+    font-size: 13px;
+    font-weight: 450;
+}
+
+.Login_Form p span {
+    color: #465685;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.Modal_Login_messing {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.Modal_Login_messing .Modal {
+    width: 100%;
+    min-height: 120px;
+    padding: 1.7rem 0.7rem;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: contrast(10%);
+    animation: slide-in-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    opacity: 0;
+}
+
+.Modal_Login_messing .Modal ol {
+    padding: 0.3rem 0.3rem;
+}
+
+.Modal_Login_messing .Modal ol li {
+    color: white;
+    font-size: 12px;
+    margin: 0.3rem 0;
+}
+
+.Modal_Login_messing .Modal .close_button {
+    position: absolute;
+    padding: 2px 2px;
+    right: 5px;
+    top: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close_icon {
+    color: red;
+    font-size: 21px;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.error_messing {
+    width: 100%;
+    height: 45px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_messing small {
+    color: white;
+    font-size: 13px;
+    font-weight: 450;
+}
+
+.loading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: max-content;
+    max-height: max-content;
+    z-index: 999;
+}
